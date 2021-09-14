@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Data</title>
+</head>
+<body>
+	<h2>Provide the information below</h2>
+	<form action="add.php" method="get">
+	<label for="fname"><span>First Name <span class="required">*</span></span>
+		<input type="text" name="fname"  required><br>
+	<label for="lname"><span>Last Name <span class="required">*</span></span>
+		<input type="text" name="lname"  required><br>
+	<label for="mname"><span>Middle Name</span>
+		<input type="text" name="mname" ><br>
+	<label for="email"><span>Email<span class="required">*</span></span>
+		<input type="Email" name="email" required><br>
+	<label for="id"><span>Student Number <span class="required">*</span></span>
+		 <input type="number" name="id" required><br>
+	<label for="dob"><span>Date of Birth <span class="required">*</span></span>
+		<input type="Date" name="dob" required><br>
+
+		<input type="Submit" name="submit">
+
+	</form>
+	  <br>
+	  <hr>
+	  <button><a href="home.php">Back Home</a></button>
+
+</body>
+</html>
+<style type="text/css">
+	
+	body{
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+	}
+	/*label{
+
+	display: block;
+	margin: 0px 0px 15px 0px;
+	}*/
+
+	label > span{
+
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+	}
+
+	span.required{
+	color:red;
+	}
+
+	input{
+		box-sizing:border-box;
+		width: 48%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		border: 1px solid #C2C2C2;
+		box-shadow: 1px 1px 4px #EBEBEB;
+		-moz-box-shadow: 1px 1px 4px #EBEBEB;
+		-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		padding: 2% 1%;
+		outline: none;
+	}
+
+	input[type="submit"]{
+		background-color: #888888;
+		color: white;
+		padding: 16px 32px;
+		text-decoration: none;
+		margin: 4px 2px;
+		cursor: pointer;
+
+	}
+	input[type="submit"]:hover{
+		background: #EA7B00;
+		color: #fff;
+	}
+</style>
